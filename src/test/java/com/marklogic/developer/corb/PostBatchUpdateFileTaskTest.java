@@ -411,7 +411,6 @@ public class PostBatchUpdateFileTaskTest {
         File file = File.createTempFile("moveFile", "txt");
         file.deleteOnExit();
         file.createNewFile();
-        PostBatchUpdateFileTask instance = new PostBatchUpdateFileTask();
         FileUtils.moveFile(file, file);
     }
 

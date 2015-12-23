@@ -421,7 +421,6 @@ public class AbstractManagerTest {
         String argVal = "";
         String propName = "";
         AbstractManager instance = new AbstractManagerImpl();
-        String expResult = "";
         String result = instance.getOption(argVal, propName);
 
     }

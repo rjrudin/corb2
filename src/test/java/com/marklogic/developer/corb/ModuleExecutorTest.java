@@ -33,7 +33,6 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
-import java.net.URI;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -91,8 +90,6 @@ public class ModuleExecutorTest {
     public void testModuleExecutor_1()
             throws Exception {
         clearSystemProperties();
-        Properties props = getProperties();
-        URI connectionUri = new URI(props.getProperty("XCC-CONNECTION-URI"));
 
         ModuleExecutor result = new ModuleExecutor();
 

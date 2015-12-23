@@ -270,9 +270,9 @@ public class AbstractTaskTest {
         instance.properties = props;
 
         instance.inputUris = new String[]{"uri1", "uri2"};
-        String[] result = instance.invokeModule();
-        assertTrue(instance.MODULE_PROPS.get("foo").contains("foo.bar"));
-        assertTrue(instance.MODULE_PROPS.get("foo").contains("foo.baz"));
+        instance.invokeModule();
+        assertTrue(AbstractTask.MODULE_PROPS.get("foo").contains("foo.bar"));
+        assertTrue(AbstractTask.MODULE_PROPS.get("foo").contains("foo.baz"));
     }
 
     @Test

@@ -72,10 +72,10 @@ public abstract class AbstractTask implements Task {
 	protected static final Map<String, Set<String>> MODULE_PROPS = new HashMap<String, Set<String>>();
 
 	protected static final int DEFAULT_CONNECTION_RETRY_LIMIT = 3;
-	protected static final int DEFAULT_CONNECTION_RETRY_INTERVAL = 60;
+	protected static final int DEFAULT_CONNECTION_RETRY_INTERVAL = 3;
 	
 	protected static final int DEFAULT_QUERY_RETRY_LIMIT = 2;
-	protected static final int DEFAULT_QUERY_RETRY_INTERVAL = 15;
+	protected static final int DEFAULT_QUERY_RETRY_INTERVAL = 3;
 
 	protected int connectRetryCount = 0;
 	
