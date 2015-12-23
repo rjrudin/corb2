@@ -18,25 +18,28 @@
  */
 package com.marklogic.developer.corb;
 
+import static com.marklogic.developer.corb.TestUtils.clearSystemProperties;
+import static com.marklogic.developer.corb.TestUtils.createTempDirectory;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 import java.util.Properties;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
-import static com.marklogic.developer.corb.TestUtils.clearSystemProperties;
-import static com.marklogic.developer.corb.TestUtils.createTempDirectory;
+
 import com.marklogic.developer.corb.util.FileUtils;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.security.NoSuchAlgorithmException;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
 
 /**
  *

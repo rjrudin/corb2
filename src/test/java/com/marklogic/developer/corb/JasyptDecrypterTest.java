@@ -18,8 +18,9 @@
  */
 package com.marklogic.developer.corb;
 
-import com.marklogic.developer.TestHandler;
 import static com.marklogic.developer.corb.TestUtils.clearSystemProperties;
+import static org.junit.Assert.assertEquals;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.List;
@@ -27,15 +28,14 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.anyString;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+
+import com.marklogic.developer.TestHandler;
 
 /**
  *

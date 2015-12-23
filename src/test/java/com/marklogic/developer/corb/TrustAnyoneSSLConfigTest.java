@@ -18,14 +18,16 @@
  */
 package com.marklogic.developer.corb;
 
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+
 import javax.net.ssl.SSLContext;
-import javax.net.ssl.X509TrustManager;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
